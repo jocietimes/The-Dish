@@ -16,3 +16,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: image_url('checkerboard-cross.png');
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+
+.navbar {
+  background: image_url('country-quilt-dark.png');
+  box-shadow: 0 4px 2px 0px #a9a9a9;
+}
