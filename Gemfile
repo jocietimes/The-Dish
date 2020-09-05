@@ -72,3 +72,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'will_paginate', '~> 3.1.0'
+
+source 'https://rails-assets.org' do
+  gem "font-awesome-rails"
+end
