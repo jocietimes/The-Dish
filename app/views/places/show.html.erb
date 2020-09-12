@@ -4,6 +4,11 @@
   <br><br>
   <p><%= @place.description %></p>
 
+  <% @place.photos.each do |photo| %>
+  <%= image_tag @photo.picture_url %>
+  <p><%= photo.caption %>
+  <% end %>
+
   <% if @place.latitude.present? && @place.longitude.present? %>
     <script>
 
@@ -64,6 +69,12 @@
     </div>
   </div>
 </div>
+
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :picture %>
+  <%= f.input :caption %>
+  <%= f.submit "Add my Photo", class: 'btn btn-primary' %>
+<% end %>
 
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
